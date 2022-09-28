@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TodaysTask</string>
+    <string name="move">Move</string>
+    <string name="move_to_next_activity">Move to next Activity</string>
+    <string name="scale_animation">Scale Animation</string>
+    <string name="fade_animation">Fade Animation</string>
+    <string name="guru_prasad">Guru Prasad</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="india">India</string>
+</resources>

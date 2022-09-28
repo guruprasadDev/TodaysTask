@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout-land/activity_object_animation.xml" value="0.15729166666666666" />
+        <entry key="app/src/main/res/layout/activity_display_fragment_lifecycle.xml" value="0.19429347826086957" />
+        <entry key="app/src/main/res/layout/activity_fade_and_scale_animation.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_list_view.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_object_animation.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_user.xml" value="0.3096774193548387" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
