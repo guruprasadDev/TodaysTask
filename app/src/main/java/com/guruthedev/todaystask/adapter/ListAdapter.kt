@@ -16,7 +16,6 @@ class ListAdapter(private val context: Activity, private val arrayList: ArrayLis
         context,
         R.layout.list_item, arrayList
     ) {
-
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val inflater: LayoutInflater = LayoutInflater.from(context)
         val view: View = inflater.inflate(R.layout.list_item, null)
@@ -33,5 +32,4 @@ class ListAdapter(private val context: Activity, private val arrayList: ArrayLis
 
         return view
     }
-
 }

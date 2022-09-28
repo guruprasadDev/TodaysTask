@@ -15,7 +15,6 @@ class DisplayFragmentLifecycle : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_display_fragment_lifecycle)
-
         binding.fragmentBtnOne.setOnClickListener {
             loadFragment(FragmentOne())
         }

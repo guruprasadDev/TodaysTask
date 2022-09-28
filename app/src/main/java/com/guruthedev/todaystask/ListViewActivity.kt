@@ -10,11 +10,10 @@ import com.guruthedev.todaystask.databinding.ActivityListViewBinding
 
 class ListViewActivity : AppCompatActivity() {
     private lateinit var binding: ActivityListViewBinding
-    private lateinit var userArrayList : ArrayList<User>
+    private lateinit var userArrayList: ArrayList<User>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = DataBindingUtil.setContentView(this, R.layout.activity_list_view)
 
         val imageId = intArrayOf(
@@ -64,7 +63,7 @@ class ListViewActivity : AppCompatActivity() {
             "Dinner tonight?"
 
         )
-        val lastMsgTime= arrayOf(
+        val lastMsgTime = arrayOf(
             "8:45 am",
             "9:00 am",
             "9:50 am",
@@ -88,15 +87,15 @@ class ListViewActivity : AppCompatActivity() {
             "India"
 
         )
-
         userArrayList = ArrayList()
 
-        for(i in name.indices){
-            val user = User(name[i],lastMessage[i],lastMsgTime[i],phoneNo[i],country[i],imageId[i])
+        for (i in name.indices) {
+            val user =
+                User(name[i], lastMessage[i], lastMsgTime[i], phoneNo[i], country[i], imageId[i])
             userArrayList.add(user)
         }
         binding.listVie.isClickable = true
-        binding.listVie.adapter = com.guruthedev.todaystask.adapter.ListAdapter(this,userArrayList)
+        binding.listVie.adapter = com.guruthedev.todaystask.adapter.ListAdapter(this, userArrayList)
         binding.listVie.setOnItemClickListener { parent, view, position, id ->
 
             val name = name[position]
@@ -104,11 +103,11 @@ class ListViewActivity : AppCompatActivity() {
             val country = country[position]
             val imageId = imageId[position]
 
-            val i = Intent(this,UserActivity::class.java)
-            i.putExtra("EXTRA_NAME",name)
-            i.putExtra("EXTRA_PHONE",phone)
-            i.putExtra("EXTRA_COUNTRY",country)
-            i.putExtra("EXTRA_IMAGE",imageId)
+            val i = Intent(this, UserActivity::class.java)
+            i.putExtra("EXTRA_NAME", name)
+            i.putExtra("EXTRA_PHONE", phone)
+            i.putExtra("EXTRA_COUNTRY", country)
+            i.putExtra("EXTRA_IMAGE", imageId)
             startActivity(i)
         }
     }
